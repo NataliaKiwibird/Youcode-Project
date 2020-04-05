@@ -1,3 +1,31 @@
 .about-us {
     margin: 10vw;
+    display: flex;
+    align-items: center;
+
+}
+.about-us__text {
+    margin: 5vw;
+    width: 50%;
+}
+.about-us__header {
+    text-transform: uppercase;
+    color: #333;
+    font-size: 24px;
+}
+.about-us__paragraph {
+    color: #777;
+    line-height: 1.5;
+}
+
+.about-us__image {
+    width: 40%;
+}
+@media (max-width: 767px) {
+    .about-us__image {
+        display: none;
+    }
+    .about-us__text {
+        margin: 0 auto;
+    }
 }
