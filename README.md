@@ -1,1 +1,1 @@
-# Youcode-Project
+# Project made as a part of Youcode course
