@@ -8,6 +8,7 @@
     background: rgba(0,0,0,0.5);
     color: white;
     padding: 20px;
+    z-index: 1;
 }
 .main-navigation__inner {
     display: flex;
