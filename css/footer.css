@@ -1,0 +1,26 @@
+.social-icon {
+    width: 20px;
+    padding-right: 5px;
+}
+.footer {
+    background-color: black;
+    color: white;
+    height: 6vw;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 1099px) {
+    .footer {
+        height: 6vh;
+    }
+}
+.footer__link {
+    text-decoration: none;
+    color: white;
+    padding: 0 20px;
+}
+.footer__link:hover {
+    border-bottom: 1px solid white;
+}
