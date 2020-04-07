@@ -15,6 +15,7 @@
         <link href="/Users/kiwibird/Desktop/Youcode-Project/css/bookmark.css" rel="stylesheet" type="text/css">
         <link href="/Users/kiwibird/Desktop/Youcode-Project/css/menu.css" rel="stylesheet" type="text/css">
         <link href="/Users/kiwibird/Desktop/Youcode-Project/css/gallery.css" rel="stylesheet" type="text/css">
+        <link href="/Users/kiwibird/Desktop/Youcode-Project/css/contact.css" rel="stylesheet" type="text/css">
 
 
     </head>
@@ -393,6 +394,39 @@
             <h2 class="bookmark__header">Kontakt</h2>
             <p class="bookmark__description">Porozmawiaj z nami lub zarezerwuj stolik</p>
         </section>
+
+        <div class="contact">
+            <form class="contact-form">
+               <div class="contact-form__info">
+                   <div class="contact-form__info-item">
+                       <img src="/Users/kiwibird/Desktop/Youcode-Project/images/icons/envelope.svg" alt="e-mail" class="contact-form__info-icon">
+                       <a href="mailto:kontakt@restauracja.pl" class="contact-form__info-link">kontakt@restauracja.pl</a>
+                   </div>
+                   <!-- mailto: sprawia, ze po kliknieciu otwiera się okno outlooka, tel: sprawia, ze wykonuje się telefon pod dany nr -->
+                   <div class="contact-form__info-item">
+                        <img src="/Users/kiwibird/Desktop/Youcode-Project/images/icons/phone.svg" alt="phone number" class="contact-form__info-icon">
+                        <a href="tel:+48 000 123 321" class="contact-form__info-link">+48 000 123 321</a>
+                    </div>
+               </div>
+
+               <p class="contact-form__header">Jeśli nie znalazłeś na naszej stronie informacji, których potrzebujesz,<br>
+                wyślij formularz kontaktowy lub zadzwoń.<br>
+                Chętnie z Tobą porozmawiamy i odpowiemy na wszystkie pytania.</p>
+
+                <div class="contact-form__fields">
+                  
+                        <input name="name" class="contact-form__field" placeholder="Imię i nazwisko" required>
+                        <input name="email" class="contact-form__field" type="email" placeholder="Adres e-mail" required>
+                 
+                
+                        <textarea placeholder="Treść wiadomości" class="contact-form__field contact-form__field--full-row" name="content" required rows="7"></textarea>
+                    
+                </div>
+                <button class="contact-form__submit-button">Wyślij</button>
+               </div> 
+            </form>
+        </div>
+
         <section class="bookmark bookmark--map" id="map">
             <h2 class="bookmark__header">Jak dojechać</h2>
             <p class="bookmark__description">Łatwo nas znajdziesz</p>
