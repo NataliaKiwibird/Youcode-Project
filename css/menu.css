@@ -1,5 +1,72 @@
 .menu {
-    display: flex;
-    align-items: center;
+    display: flex; 
     justify-content: center;
+    margin: 5vw 5vw;
+    margin-left: 2.7vw;
+}
+@media (max-width: 1199px) {
+    .menu {
+        margin-left: 1vw;
+    }
+}
+@media (max-width: 767px) {
+    .menu {
+        flex-wrap: wrap;
+    }
+}
+.menu__column {
+    flex-basis: 33%;
+    padding: 0 15px;
+}
+@media (max-width: 767px) {
+    .menu__column {
+        flex-basis: 100%;
+        margin-left: -20px;
+    }
+}
+.menu__header {
+    font-size: 42px;
+    text-transform: uppercase;
+    margin-left: 2.4vw;
+}
+@media (max-width: 1199px) {
+    .menu__header {
+        font-size: 30px;
+        margin-left: 3.8vw;
+    }
+}
+@media (max-width: 780px) {
+    .menu__header {
+        font-size: 24px;
+        margin-left: 5vw;
+    }
+}
+.menu__list {
+    list-style: none;
+    /* padding-left: 0; */
+}
+.menu__list-item {
+    margin: 30px 0;
+}
+.menu__position {
+    display: flex; /* flex tutaj ułatwia stylowanie kropek i ceny */
+    margin: 10px 0;
+    align-items: baseline; /* tyczy się border-top w ::after */
+}
+.menu__position::after {
+    content: "";
+    border-top: 2px dotted; /*kropki w menu*/
+    flex-grow: 1;
+    order: 2;
+}
+.menu__position-price {
+    order: 3; /* order 2 i 3 eby odwrócić kolejność kropek i ceny */
+}
+.menu__position-name {
+    text-transform: uppercase;
+}
+.menu__description {
+    color: #777;
+    font-size: 14px;
+    margin: 5px 0;
 }
