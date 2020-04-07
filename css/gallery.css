@@ -1,0 +1,27 @@
+.gallery {
+    list-style: none;
+    display: grid;
+    padding-left: 0; /* rozwiązanie gdy element odsuwa się od lewej strony */
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    gap: 20px;
+    margin: 30px;
+}
+@media (max-width: 767px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.gallery__aspect-ratio {
+    padding-top: calc(100% * 9/16); /* padding-top jest jedynym selektorem css, który odnosi się do szerokości. calc sprawia, ze obrazek ma 9/16 swojej szerokości. Ten zabieg ma na celu dostosowanie wszystkich obrazków do wspólnej proporcji */
+    position: relative;
+}
+.gallery__image {
+    /* width: 100%; ustawienie szerokości na 100% sprawia, ze elementy w gridzie dostosowują swoją wielkość do przeznaczonego im miejsca */
+    position: absolute; /* ciąg dalszy ustawiania róznej wielkości obrazków w jedną proporcję */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    object-fit: cover;
+}
